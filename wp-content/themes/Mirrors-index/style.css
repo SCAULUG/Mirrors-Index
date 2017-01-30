@@ -1,0 +1,293 @@
+/*
+Theme Name: Mirrors-index
+Description: The index of SCAU Mirrors
+Author: Rytia
+Author URI: http://www.zzfly.net
+Version: 1.0 
+Tags: mirrors,scau,linux
+*/
+
+
+body{
+	background: #f1f1f1;
+}
+
+h2{
+	padding:10px 5px;
+	margin:0;
+	width: 95%;
+	border-bottom: 1px solid rgb(55, 141, 212);
+	font-size: 16px;
+}
+
+hr{
+	margin-top: 10px;
+    margin-bottom: 10px;
+    border: 0;
+    border-top: 1px solid #ccc;
+}
+
+#header{
+	width: 100%;
+	height: 120px;
+	background:rgb(55, 141, 212);
+}
+
+#header .content{
+	width: 100%;
+	max-width: 80%;
+	margin:0 auto;
+	padding: 25px 0;
+}
+#header .content a{
+	color:#fff;
+	font-size: 24px;
+	font-family:Microsoft Yahei;
+	display: block;
+}
+#header .content a:hover{
+	text-decoration: none;
+}
+#header .content p{
+	color:rgba(255, 255, 255, 0.66);
+	font-size: 16px;
+	font-family:Microsoft Yahei;
+	display: block;
+	margin-top: 5px;
+	font-style: italic;
+}
+#header .left{
+	float: left;
+}
+#header .right{
+	width: auto;
+	padding:0;
+	margin:0;
+	display: none;
+	float: right;
+	margin-top: 10px;
+}
+#header ul li{
+	list-style: none;
+	display: block;
+	float: left;
+	padding:0px 9px;
+	-webkit-transition: 200ms;
+	-moz-transition: 200ms;
+	-ms-transition: 200ms;
+	-o-transition: 200ms;
+	transition: 200ms;
+	height: 40px;
+}
+#header ul li:hover{
+	background: rgba(255, 255, 255, 0.1)!important;
+}
+#header ul li a{
+	font-size: 14px!important;
+	line-height: 40px;
+	color: rgba(255, 255, 255, 0.9)!important;
+
+}
+
+
+
+
+#main .content{
+	width: 100%;
+	margin:0 auto;
+	font-family:Microsoft Yahei; 
+	padding: 15px 25px 25px 25px;
+	background: #fff;
+}
+
+.table{
+	font-size: 14px!important;
+	margin-bottom: 30px;
+}
+.table thead tr th{
+	color:#333;
+	font-weight: 400;
+	border-bottom: 1px solid #ddd; 
+}
+
+.table a:hover{
+	text-decoration: none;
+	border-bottom: 1px solid rgb(55, 141, 212);
+}
+
+aside{
+	padding: 0px;
+	float: left;
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+#download-iso{
+	width: auto;
+	height: auto;
+	min-height:50px;
+	padding: 10px 5px; 
+}
+
+.iso-btn{
+	padding: 4px 8px;
+	border:1px solid rgb(55, 141, 212);
+	margin-right: 7px;
+	margin-top: 7px;
+	display: block;
+    float: left;
+	-webkit-transition: 200ms;
+	-moz-transition: 200ms;
+	-ms-transition: 200ms;
+	-o-transition: 200ms;
+	transition: 200ms;
+}
+
+.iso-btn:hover{
+	background: rgb(55, 141, 212);
+	color:#fff;
+	text-decoration: none;
+}
+
+.index-news{
+	padding: 5px 0 0 5px;
+	margin:0; 
+}
+.index-news li{
+	list-style: none;
+	display: block;
+	height: 25px;
+	line-height: 25px;
+	white-space:nowrap;
+	overflow: hidden;
+}
+.index-news li span{
+	font-style: italic;
+	font-size: 12px;
+	color:rgb(55, 141, 212);
+	margin-right: 9px;
+}
+.index-news li a{
+	font-size: 14px;
+	color:#505050;
+}
+#footer{
+	width: 100%;
+	max-width: 1050px;
+	margin:30px auto 0 auto;
+	display: block;
+	padding:5px;
+	color:#888;
+	text-align: center;
+	height: auto;
+	min-height: 30px;
+	line-height: 30px;
+	margin-bottom: 7px;
+}
+#footer span{
+	width: 100%;
+	display: block;
+	padding-right: 0px;
+}
+
+@media screen and (min-width: 1000px) {
+
+#footer span{
+	padding-right: 10px;
+	display: initial;
+}
+#main .content{
+	max-width: 80%;
+}
+#header .right{
+	display: block;
+}
+#main .content {
+    margin-top: 20px;
+}
+}
+
+.single h2{
+	text-align: center;
+	font-size: 20px;
+	line-height: 36px;
+	margin-bottom: 5px;
+	border:0px;
+}
+.single span{
+	font-size: 12px;
+	display: block;
+	color: #777;
+	padding: 7px 10px;
+	background: rgba(241, 241, 241, 0.80);
+	margin-bottom: 10px;
+
+}
+.single p{
+	line-height: 2;
+}
+.category h2{
+	font-size: 20px;
+	line-height: 36px;
+	margin-bottom: 10px;
+	width: 100%;
+}
+.category li{
+	list-style: none;
+	display: block;
+	height: 35px;
+	line-height: 35px;
+	width: 100%;
+}
+.category li span{
+	font-style: italic;
+	font-size: 12px;
+	color:rgb(55, 141, 212);
+	float: right;
+}
+.category li a{
+	font-size: 16px;
+	color:#505050;
+	padding: 5px;
+	border-left: 3px solid #fff;
+	padding-left: 5px;
+	-webkit-transition: 200ms;
+	-moz-transition: 200ms;
+	-ms-transition: 200ms;
+	-o-transition: 200ms;
+	transition: 200ms;
+}
+.category li a:hover{
+	text-decoration: none;
+	border-left: 3px solid #ccc;
+	margin-left: 7px;
+}
+.page{
+	margin-top: 0!important;
+	padding-top:0!important;
+}
+.page li{
+	float: left;
+	list-style: none;
+	margin-left: 8px;
+}
+.page a{
+	color:rgb(55, 141, 212);
+	padding:3px 5px;
+	display: block;
+	border-bottom:1px solid rgb(55, 141, 212);
+	-webkit-transition: 200ms;
+	-moz-transition: 200ms;
+	-ms-transition: 200ms;
+	-o-transition: 200ms;
+	transition: 200ms;
+}
+.page a:hover{
+	text-decoration: none;
+	color:#fff!important;
+	background: rgb(55, 141, 212);
+}
+
+.page a[class="focus"]{
+	border-bottom:2px solid rgb(55, 141, 212);
+}
