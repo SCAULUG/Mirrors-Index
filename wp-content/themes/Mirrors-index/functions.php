@@ -42,13 +42,22 @@ function tb_meta_boxes() {
     global $post, $tb_meta_boxes;
     foreach($tb_meta_boxes as $meta_box) {
         $meta_box_value = get_post_meta($post->ID, $meta_box['name'].'_value', true);
-        if($meta_box_value == "")
+        if($meta_box_value == ""){
             $meta_box_value = $meta_box['std'];
         echo'<input type="hidden" name="'.$meta_box['name'].'_noncename" id="'.$meta_box['name'].'_noncename" value="'.wp_create_nonce( plugin_basename(__FILE__) ).'" />';
+        // 若之前信息框为空，则显示提示信息
         // 自定义字段标题
         echo'<h4>'.$meta_box['title'].'</h4>';
         // 自定义字段输入框
-        echo '<input class="input-info" style="width:100%" cols="180" rows="3" name="'.$meta_box['name'].'_value" value='.$meta_box_value.'></input><br />';
+        echo '<input class="input-info" style="width:100%" cols="180" rows="3" name="'.$meta_box['name'].'_value" placeholder='.$meta_box_value.' value=""></input><br />';
+        }else{
+            // 若之前信息框有输入值则保留原值
+            // 自定义字段标题
+            echo'<h4>'.$meta_box['title'].'</h4>';
+            // 自定义字段输入框
+            echo '<input class="input-info" style="width:100%" cols="180" rows="3" name="'.$meta_box['name'].'_value" value='.$meta_box_value.'></input><br />';
+        }
+            
     }
 }
 

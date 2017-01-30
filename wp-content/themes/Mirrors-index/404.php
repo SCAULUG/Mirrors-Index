@@ -2,27 +2,14 @@
 	<div id="main">
 		<div class="row content">
 		<div class="col-md-8">
-			<h2 style="width:110px;">站点资源列表</h2>
-			<table class="table table-hover">
+			<h2 style="width:190px;">您好像进入了异次元空间</h2>
+			<table class="table">
 
 				<tbody>
-					<?php
-					$args = array('orderby' => 'title','showposts' => 999,'cat' => 2,'order' => 'asc' );
-					$query_posts = new WP_Query();
-					$query_posts->query($args);
-					while ($query_posts->have_posts()) : $query_posts->the_post();
-					$img_title = get_post_meta($post->ID, 'xtitle'.'_value', true);
-					$url = get_post_meta($post->ID, 'url'.'_value', true);
-					?>  
-					<tr>
-						<td><a href="<?php echo $url; ?>"><?php echo $img_title; ?></a></td>
-						<td>Updated at 2017-01-02 17:23</td>
-						<td><a href="<?php the_permalink(); ?>" target="_blank">HELP</a></td>
+										<tr>
+						<td>请确认您寻找的资源地址是否正确并重试。</td>
+						
 					</tr>
-					
-					<?php endwhile;?>
-					<?php wp_reset_query(); ?>
-
 
 				</tbody>
 			</table>
