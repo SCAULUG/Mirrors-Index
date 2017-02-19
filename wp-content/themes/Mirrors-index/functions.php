@@ -125,6 +125,54 @@ echo ($paged == $i)? "<li><a>".$i."</a></li>":"<li><a href='".get_pagenum_link($
 echo "</div>\n";
 }
 }
-
+function get_update_time($name)
+{
+    $name=strtolower($name);
+    $file=fopen("./result.txt","r") or die("Unable to open file!");
+    while(!feof($file))
+    {
+        $line=fgets($file);
+        if(cmp($line,$name)==1)
+        {
+            if(place_of_2($line)==strlen($line))
+                echo "Synchronizing";
+            else
+            {
+                for($i=place_of_2($line);$i<place_of_2($line)+19;$i++)
+                echo $line[$i];
+            }
+            //echo "<br>";
+        }
+    }
+    fclose($file);
+}
+function place_of_2($line)
+{
+    $flag=strlen($line);
+    for($i=0;$i<strlen($line);$i++)
+    {
+        if($line[$i]=='2')
+        {
+            $flag=$i;
+            break;
+        }
+    }
+    return $flag;
+}
+function cmp($line,$name)
+{
+    $i=$flag=1;
+    for($i=0;$i<strlen($name);$i++)
+    {
+        if($line[$i]!=$name[$i])
+        {
+            $flag=0;
+            break;
+        }
+    }
+    if($line[$i]=="-")
+        $flag=0;
+    return $flag;
+}
 
 ?>
