@@ -1,4 +1,4 @@
-<?php
+xi<?php
 //关闭谷歌字体
 function remove_open_sans() {
 wp_deregister_style('open-sans');
@@ -128,7 +128,7 @@ echo "</div>\n";
 function get_update_time($name)
 {
     $name=strtolower($name);
-    $file=fopen("./result.txt","r") or die("Unable to open file!");
+    $file=fopen("./result","r") or die("Unable to open file!");
     while(!feof($file))
     {
         $line=fgets($file);
