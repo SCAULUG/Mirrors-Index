@@ -392,7 +392,7 @@ INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 (159,	36,	'_edit_lock',	'1485769489:2'),
 (160,	36,	'_edit_last',	'2'),
 (163,	36,	'xtitle_value',	'Debian'),
-(164,	36,	'url_value',	'/debain/'),
+(164,	36,	'url_value',	'/debian/'),
 (169,	39,	'_edit_lock',	'1485766448:2'),
 (170,	39,	'_edit_last',	'2'),
 (173,	39,	'xtitle_value',	'如果是镜像源分类，请填写，否则无须理会'),

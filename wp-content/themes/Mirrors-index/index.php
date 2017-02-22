@@ -16,7 +16,7 @@
 					?>  
 					<tr>
 						<td><a href="<?php echo $url; ?>"><?php echo $img_title; ?></a></td>
-						<td>Updated at 2017-01-02 17:23</td>
+						<td><?php get_update_time($img_title); ?></td>
 						<td><a href="<?php the_permalink(); ?>" target="_blank">HELP</a></td>
 					</tr>
 					
