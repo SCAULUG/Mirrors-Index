@@ -1,4 +1,4 @@
-xi<?php
+<?php
 //关闭谷歌字体
 function remove_open_sans() {
 wp_deregister_style('open-sans');
