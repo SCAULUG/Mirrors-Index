@@ -158,8 +158,6 @@ aside{
 	display: block;
 	height: 25px;
 	line-height: 25px;
-	white-space:nowrap;
-	overflow: hidden;
 }
 .index-news li span{
 	font-style: italic;
@@ -291,3 +289,17 @@ aside{
 .page a[class="focus"]{
 	border-bottom:2px solid rgb(55, 141, 212);
 }
+
+/*fancyindex*/
+body,html {background:#fff;margin: 0;font-family: "Lucida Grande",Calibri,Arial;font-size: 13pt;color: #333;}
+tr.e {background:#f4f4f4;}
+th,td {padding:0.1em 0.5em;}
+th {text-align:left;font-weight:bold;background:#eee;border-bottom:1px solid #aaa;}
+#top1 {font-size: 26px;height:120px;text-align: center;margin: 0;background:rgb(55, 141, 212);color: #fff;}
+#top2 {width:80%; font-size:14px; margin:10px auto 10px auto;}
+#footer {width:80%;margin: 0 auto; padding: 10pt 0;font-size: 10pt;text-align:center;}
+#footer a {font-size: 14px; font-weight: normal; text-decoration: underline;}
+#list {    border: 1px solid #61a9d0;width:80%;margin: 0 auto;padding: 0;background: #fff;}
+a {color: #1e6f8e;font-size: 11pt;font-weight: bold;text-decoration: none;}
+a:hover {color: #000;}
+#top1 a{color:#fff;text-decoration: none;font-size: 26px;line-height: 120px;}
