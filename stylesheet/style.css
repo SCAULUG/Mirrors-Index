@@ -258,12 +258,10 @@ thead {
 .about {
     margin:0 auto;
     float: left;
-    width:600px;
-    padding-left: 180px;
+    width:100%;
     padding-top: 30px;
-    text-indent: 2em;
     font-size: 14px;
-    line-height: 18px;
+	text-align: center;
 }
 
 .laiwang  {
