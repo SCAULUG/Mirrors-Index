@@ -1,4 +1,4 @@
-/*
+ï»¿/*
     AliMirrors stylesheets files
 */
 
@@ -53,7 +53,6 @@ table {
 
 body {
     text-align: center;
-    font-family: "Î¢ÈíÑÅºÚ";
 }
 
 hr{display:block;height:0;overflow:hidden;font-size:0;border-top:1px solid #e3e3e3;margin:12px 0}
@@ -66,7 +65,7 @@ hr{display:block;height:0;overflow:hidden;font-size:0;border-top:1px solid #e3e3
 }
 
 #header {
-    margin: 0% 10%;
+    margin: 0% 8%;
     padding-top: 20px;
     width: 80%;
     height: 110px;
@@ -104,13 +103,13 @@ hr{display:block;height:0;overflow:hidden;font-size:0;border-top:1px solid #e3e3
 
 #navbar ul li {
     float: right;
-	margin-right: 10px;
+	margin-left: 10px;
 	padding: 15px 0;
 }
 
 #navbar ul li a {
     text-decoration: none;
-	margin-right: 10px;
+	margin-left: 10px;
 	color: #EEECDF;
 }
 
@@ -127,11 +126,6 @@ hr{display:block;height:0;overflow:hidden;font-size:0;border-top:1px solid #e3e3
 	color: #18840D;
 }
 
-#content {
-    width:50%;
-    float: left;
-	margin-left: 12%;
-}
 
 .file-list {
     background: url("../images/file-list.png") no-repeat left top;
@@ -148,7 +142,9 @@ hr{display:block;height:0;overflow:hidden;font-size:0;border-top:1px solid #e3e3
     width: 100%;
     margin-top: 20px;
     text-align: left;
-
+	#border-bottom: solid 1px #eeeeee;
+	vertical-align: center;
+	margin-bottom: 10px;
 }
 
 thead {
@@ -171,12 +167,6 @@ thead {
     text-decoration: none;
 }
 
-#content-about {
-    width:50%;
-    float: left;
-	margin-left: 12%;
-}
-
 .c-about {
     background: url("../images/file-list.png") no-repeat left top;
     height: 22px;
@@ -186,27 +176,10 @@ thead {
     border-bottom:  solid 1px #eeeeee;
 }
 
-#content-about p {
-	padding-top: 10px;
-	padding-bottom: 5px;
-}
 
-#siderbar {
-    width: 25%;
-    min-height: 450px;
-    float: right;
-    border-left: solid 1px #eeeeee;
-	margin-right: 11%;
-}
 
-.mirror-help {
-    padding-left: 30px;
-    padding-top:10px;
-    padding-bottom: 10px;
-    margin-left: 5px;
-    background: url("../images/mirror-help.png") no-repeat left center;
-    border-bottom: solid 1px #eeeeee;
-}
+
+
 
 .mirror-help-tips {
     padding-left: 30px;
@@ -224,7 +197,7 @@ thead {
 }
 
 .mirror-link {
-    margin-top: 10px;
+    #margin-top: 10px;
     padding-left: 30px;
     padding-top:10px;
     padding-bottom: 10px;
@@ -329,4 +302,70 @@ code,pre {
 .help a {
     text-decoration: none;
     color: #333333;
+}
+@media screen and (min-width:680px) {
+  div#siderbar {
+    min-height: 450px;
+    float: right;
+    border-left: solid 1px #eeeeee;
+    width: 24%;
+    margin-right: 10%;
+  }
+  div#content{
+  	width:55%;
+    float: left;
+	margin-left: 10%;
+  }
+  .mirror-help {
+    padding-left: 30px;
+    padding-top:10px;
+    padding-bottom: 10px;
+    margin-left: 5px;
+    background: url("../images/mirror-help.png") no-repeat left center;
+    border-bottom: solid 1px #eeeeee;
+  }
+  div#content-about {
+    width:55%;
+    float: left;
+	margin-left: 10%;
+  }
+  div#content-about p {
+	padding-top: 10px;
+	padding-bottom: 5px;
+  }
+}
+@media screen and (max-width:679px) {
+  div#siderbar {
+  	float:left;
+    display: inline;
+    min-height: 450px;
+	margin: 10px 10%;
+  }
+  div#content {
+    width:80%;
+    float: left;
+	margin-left: 10%;
+	margin-right: 10%;
+  	#width:-webkit-fill-available;
+	#max-width: 679px;
+  }
+  .mirror-help {
+    padding-left: 30px;
+    padding-top:10px;
+    padding-bottom: 10px;
+    margin-left: 0px;
+    background: url("../images/mirror-help.png") no-repeat left center;
+    border-bottom: solid 1px #eeeeee;
+  }
+   div#content-about {
+	width:80%;
+	float: left;
+	margin-left: 10%;
+	padding-bottom: 15px;
+	#border-bottom: solid 1px #eeeeee;
+  }
+  div#content-about p {
+	padding-top: 10px;
+	padding-bottom: 5px;
+  }
 }
