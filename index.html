@@ -101,13 +101,19 @@
 		<div class=about></div>
 	</div>
 <script>
-$("#archlinux").load("result #archlinux");
-$("#centos").load("result #centos");
-$("#debian").load("result #debian");
-$("#epel").load("result #epel");
-$("#raspbian").load("result #raspbian");
-$("#ubuntu").load("result #ubuntu");
-$("#ubuntu-cdimage").load("result #ubuntu-cdimage");
+function showTime(distro){
+    $("#"+distro).load("result #"+distro,function(response,status,xhr){
+        if(response.indexOf(distro)<0)
+	    $("#"+distro).html("Waiting For Sync");
+    });
+ }
+showTime("archlinux");
+showTime("centos");
+showTime("debian");
+showTime("epel");
+showTime("raspbian");
+showTime("ubuntu");
+showTime("ubuntu-cdimage")
 </script>
 </body>
 </html>
