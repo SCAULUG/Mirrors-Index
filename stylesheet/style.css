@@ -187,6 +187,7 @@ thead {
     padding-bottom: 10px;
     margin-left: 5px;
     background: url("../images/mirror-help-tips.png") no-repeat left center;
+	background-size: 27px;
     border-bottom: solid 1px #eeeeee;
 }
 #siderbar p {
@@ -203,6 +204,27 @@ thead {
     padding-bottom: 10px;
     margin-left: 5px;
     background: url("../images/mirror-link.png") no-repeat left center;
+	background-size: 25px;
+    border-bottom: solid 1px #eeeeee;
+}
+
+.mirror-contact {
+    padding-left: 30px;
+    padding-top:10px;
+    padding-bottom: 10px;
+    margin-left: 5px;
+    background: url("../images/contact.png") no-repeat left center;
+	background-size: 25px;
+    border-bottom: solid 1px #eeeeee;
+}
+
+.mirror-about {
+    padding-left: 30px;
+    padding-top:10px;
+    padding-bottom: 10px;
+    margin-left: 5px;
+    background: url("../images/about.png") no-repeat left center;
+	background-size: 25px;
     border-bottom: solid 1px #eeeeee;
 }
 
@@ -222,7 +244,7 @@ thead {
 }
 
 #footer {
-    width:99%;
+    width:99.5%;
     margin-top: 20px;
     border:solid 1px #eeeeee;
     background-color: #f1f5f0;
@@ -232,7 +254,8 @@ thead {
     margin:0 auto;
     float: left;
     width:100%;
-    padding-top: 30px;
+    padding-top: 20px;
+	padding-bottom: 20px;
     font-size: 14px;
 	text-align: center;
 }
@@ -269,6 +292,7 @@ thead {
     list-style: square url("../images/help-link-list.png");
     padding-left: 20px;
 }
+
 code,pre {
     border: solid 1px #eeeeee;
     padding: 5px;
@@ -322,6 +346,7 @@ code,pre {
     padding-bottom: 10px;
     margin-left: 5px;
     background: url("../images/mirror-help.png") no-repeat left center;
+	background-size: 27px;
     border-bottom: solid 1px #eeeeee;
   }
   div#content-about {
@@ -355,6 +380,7 @@ code,pre {
     padding-bottom: 10px;
     margin-left: 0px;
     background: url("../images/mirror-help.png") no-repeat left center;
+	background-size: 27px;
     border-bottom: solid 1px #eeeeee;
   }
    div#content-about {
