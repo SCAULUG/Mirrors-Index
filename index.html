@@ -110,7 +110,7 @@
 <script>
 function showTime(distro){
     $("#"+distro).load("result #"+distro,function(response,status,xhr){
-        if(response.indexOf(distro)<0)
+        if(response.indexOf("<p id=\""+distro+"\">")<0)
 	    $("#"+distro).html("Waiting For Sync");
     });
  }
