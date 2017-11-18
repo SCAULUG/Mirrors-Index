@@ -140,19 +140,22 @@ hr{display:block;height:0;overflow:hidden;font-size:0;border-top:1px solid #e3e3
     border-collapse:collapse;
     border-spacing:0;
     width: 100%;
-    margin-top: 20px;
+    margin-top: 10px;
     text-align: left;
-	#border-bottom: solid 1px #eeeeee;
 	vertical-align: center;
-	margin-bottom: 10px;
 }
-
+/*
 thead {
     padding-bottom:5px;
+	
+}
+*/
+.file-table th {
+    line-height: 30px;
 }
 
 .file-table tr {
-    height: 30px;
+	line-height: 30px;
 }
 
 .file-table tr:hover {
@@ -160,7 +163,7 @@ thead {
 }
 
 .file-table tr td {
-    padding-top: 5px;
+    /*padding-top: 5px;*/
 }
 
 .file-table tr td a {
