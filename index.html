@@ -35,6 +35,10 @@
 					</thead>
 					<tbody>
 						<tr>
+							<td><a href="/anaconda/">Anaconda</a></td>
+							<td id="anaconda">Waiting For Sync</td>
+							<td><a href="/mirrors-help/anaconda.html">help</a></td></tr>
+						<tr>
 							<td><a href="/archlinux/">Archlinux</a></td>
 							<td id="archlinux">Waiting For Sync</td>
 							<td><a href="/mirrors-help/archlinux.html">help</a></td></tr>
@@ -114,6 +118,7 @@ function showTime(distro){
 	    $("#"+distro).html("Waiting For Sync");
     });
  }
+showTime("anaconda");
 showTime("archlinux");
 showTime("centos");
 showTime("debian");
