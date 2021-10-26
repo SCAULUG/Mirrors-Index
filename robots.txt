@@ -1,0 +1,17 @@
+# robots.txt for https://mirrors.scau.edu.cn
+User-agent: *
+
+Disallow: /archlinux/
+Disallow: /centos
+Disallow: /debian
+Disallow: /deepin
+Disallow: /deepin-cd
+Disallow: /epel
+Disallow: /linuxmint-cd
+Disallow: /openeuler
+Disallow: /proxmox
+Disallow: /raspbian
+Disallow: /raspberrypi
+Disallow: /ubuntu
+Disallow: /ubuntu-cdimage
+Disallow: /ubuntukylin
