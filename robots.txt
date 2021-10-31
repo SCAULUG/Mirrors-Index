@@ -1,6 +1,10 @@
 # robots.txt for https://mirrors.scau.edu.cn
 User-agent: *
 
+Disallow: /images/
+Disallow: /stylesheet/
+Disallow: /mirrors-help/_sources/
+Disallow: /mirrors-help/_static/
 Disallow: /archlinux/
 Disallow: /centos/
 Disallow: /debian/
