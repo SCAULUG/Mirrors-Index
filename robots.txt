@@ -19,3 +19,4 @@ Disallow: /raspberrypi/
 Disallow: /ubuntu/
 Disallow: /ubuntu-cdimage/
 Disallow: /ubuntukylin/
+Disallow: /ubuntukylin-cdimage/
